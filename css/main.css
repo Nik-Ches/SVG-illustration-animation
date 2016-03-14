@@ -1,0 +1,132 @@
+body {
+    color: #fff;
+}
+
+h1 {
+    color: #fff;
+    padding: 20px;
+    font-size: 100px;
+    background-color: red;
+}
+
+.rightEye {
+      transform-origin: 50% 50%;
+      transition: all .5s ease-in;
+
+    -webkit-animation: closeEye 2.1s ease infinite;
+}
+
+.leftEye {
+    transform-origin: 50% 50%;
+    transition: all .5s ease-in;
+
+    -webkit-animation: closeEye 2.1s .1s ease infinite;
+}
+
+
+.monkey {
+    transform-origin: 50% top;
+    transition: all .5s ease-in;
+
+    -webkit-animation: jump 3s  ease infinite;
+}
+
+.goatHead {
+  transform-origin: 50% 50%;
+  transition: all .5s ease-in;
+
+  -webkit-animation: moveHead 4s  infinite;
+}
+
+.monkeyTale {
+  transform-origin: 50% 50%;
+  transition: all 2s ease-in;
+}
+
+.lionTale {
+  transform-origin: 50% top;
+  transition: all .5s ease-in;
+
+  -webkit-animation: elastic 5s  linear infinite;
+}
+
+.lionEyes {
+  transform-origin: 50% 50%;
+  transition: all .5s ease-in;
+
+-webkit-animation: closeEye 4.5s ease infinite;
+}
+
+.elephantNose {
+  transform-origin: 50% 50%;
+  transition: all .5s ease-in;
+
+  -webkit-animation: swirl 4s  ease infinite;
+}
+
+.zebraLeg {
+  transform-origin: 50% 50%;
+  transition: all .5s ease-in;
+
+  -webkit-animation: hit 1s ease  infinite;
+}
+
+.jerafPouas {
+  transform-origin: 50% 50%;
+  transition: all .5s linear;
+
+  -webkit-animation: pulshing 2s linear infinite;
+}
+
+
+@keyframes jump {
+    79% {transform: translate3d(0, 0, 0) scale(1, 1);}
+    80% {transform: translate3d(0, 0, 0) scale(1.2, 0.8);}
+    90% {transform: translate3d(0, 100px, 0) scale(1, 1);}
+    100%{transform: translate3d(0, 0, 0) scale(1.1, 0.9);}
+}
+
+@-webkit-keyframes elastic {
+  0% { -webkit-transform: translate3d(10, 0, 0) scale(1, 1); transform: translate3d(0, 0, 0) scale(1, 1); }
+  25% { -webkit-transform: scale(0.7, 1.3); transform: scale(0.7, 1.3); }
+  50% { -webkit-transform: scale(1.1, 0.9); transform: scale(1.1, 0.9); }
+  75% { -webkit-transform: scale(0.95, 1.05); transform: scale(0.95, 1.05); }
+100% { -webkit-transform: translate3d(20, 0, 0) scale(1, 1) ; transform: translate3d(20, 0, 0) scale(1, 1); }
+}
+
+@keyframes closeEye {
+  0% {transform: scale(0.2, 0.2);}
+  10% {transform: scale(1, 1);}
+}
+
+@keyframes moveHead {
+  80% { -webkit-transform: scale(1); transform: scale(1); }
+  86% { -webkit-transform: scale(1.02); transform: scale(1.02); }
+  88%, 92% { -webkit-transform: rotate(-20deg) scale(1.02); transform: rotate(-20deg) scale(1.02); }
+  90% { -webkit-transform: rotate(20deg) scale(1.02); transform: rotate(20deg) scale(1.02); }
+  94% { -webkit-transform: rotate(0deg) scale(1.02); transform: rotate(0deg) scale(1.02); }
+  100% { -webkit-transform: scale(1); transform: scale(1); }
+}
+
+@-webkit-keyframes swirl {
+	20% { -webkit-transform: rotate(5deg); transform: rotate(5deg); }
+	40% { -webkit-transform: rotate(-3deg); transform: rotate(-3deg); }
+	60% { -webkit-transform: rotate(2deg); transform: rotate(2deg); }
+	80% { -webkit-transform: rotate(-2deg); transform: rotate(-2deg); }
+	100% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+}
+
+@-webkit-keyframes hit {
+  0% { -webkit-transform: translateX(0%); transform: translateX(0%); }
+  15% { -webkit-transform: translateX(-85%) rotate(-30deg); transform: translateX(-85%) rotate(-30deg); }
+  30% { -webkit-transform: translateX(40%) rotate(3deg); transform: translateX(20%) rotate(3deg); }
+  45% { -webkit-transform: translateX(-15%) rotate(-3deg); transform: translateX(-15%) rotate(-3deg); }
+  60% { -webkit-transform: translateX(10%) rotate(2deg); transform: translateX(10%) rotate(2deg); }
+  75% { -webkit-transform: translateX(-5%) rotate(-1deg); transform: translateX(-5%) rotate(-1deg); }
+  100% { -webkit-transform: translateX(0%); transform: translateX(0%); }
+}
+
+@-webkit-keyframes pulshing {
+	from { opacity: 1; }
+	to { opacity: 0; }
+}
