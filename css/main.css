@@ -12,7 +12,7 @@ h1, p {
     color: #fff;
     padding: 10px;
     font-size: 30px;
-    background-color: #27ae60;
+    background-color: #8AC249;
 
 }
 
@@ -93,6 +93,15 @@ h1, p {
   -webkit-animation: pulshing 2s linear infinite;
 }
 
+.elephantLeftEar {
+    transform-origin: top right;
+    animation: leftear 3s ease-in-out  infinite;
+}
+
+.elephantRightEar {
+    transform-origin: center left;
+    animation: rightear 2s ease-in-out  infinite;
+}
 
 @keyframes jump {
     79% {transform: translate3d(0, 0, 0) scale(1, 1);}
@@ -144,4 +153,40 @@ h1, p {
 @-webkit-keyframes pulshing {
 	from { opacity: 1; }
 	to { opacity: 0; }
+}
+
+@-webkit-keyframes leftear {
+    from {
+        -webkit-transform: rotate3d(0, 1, 0, 0deg);
+    }
+    86%  {
+        -webkit-transform: rotate3d(0, 1, 0, 0deg);
+    }
+    90% {
+        -webkit-transform: rotate3d(0, 1, 0, 80deg);
+    }
+    94%{
+        -webkit-transform: rotate3d(0, 1, 0, 00deg);
+    }
+    to{
+        -webkit-transform: rotate3d(0, 1, 0, 00deg);
+    }
+}
+
+@-webkit-keyframes rightear {
+    from {
+        -webkit-transform: rotate3d(0, 1, 0, 0deg);
+    }
+    86%  {
+        -webkit-transform: rotate3d(0, 1, 0, 0deg);
+    }
+    90% {
+        -webkit-transform: rotate3d(0, 1, 0, 80deg);
+    }
+    94%{
+        -webkit-transform: rotate3d(0, 1, 0, 00deg);
+    }
+    to{
+        -webkit-transform: rotate3d(0, 1, 0, 00deg);
+    }
 }
